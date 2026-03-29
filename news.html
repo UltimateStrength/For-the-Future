@@ -11,6 +11,109 @@
 
         <link rel="icon" href="assets/images/shortlogo.png">
         <title>Novidades | For The Future</title>
+
+        <style>
+            #content-news {
+                overflow: hidden;
+                margin-top: 100px;
+            }
+
+            .news-hero {
+                background-color: #8c76e1;
+                color: #ffffff;
+                text-align: center;
+                padding: 60px 40px 40px;
+            }
+
+            .news-hero h1 {
+                font-size: 48px;
+                margin-bottom: 12px;
+            }
+
+            .news-hero p {
+                color: #e5c9b2;
+                font-size: 18px;
+            }
+
+            .news-hero a {
+                color: #ffbb83;
+                text-decoration: none;
+                border-bottom: 1px solid #ffbb83;
+            }
+
+            .news-container {
+                background-color: #ffffff;
+                max-width: 860px;
+                margin: 0 auto;
+                padding: 60px 40px;
+            }
+
+            .news-item {
+                border-left: 5px solid #8c76e1;
+                padding: 20px 24px;
+                margin-bottom: 40px;
+                background-color: #faf8ff;
+                border-radius: 0 8px 8px 0;
+            }
+
+            .news-item .news-date {
+                font-size: 14px;
+                color: #8c76e1;
+                margin-bottom: 6px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+
+            .news-item h2 {
+                color: #352479;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .news-item p {
+                color: #333;
+                font-size: 17px;
+                line-height: 1.5;
+                margin-bottom: 8px;
+                font-weight: normal;
+            }
+
+            .news-item .news-tag {
+                display: inline-block;
+                background-color: #352479;
+                color: #fff;
+                font-size: 12px;
+                padding: 3px 10px;
+                border-radius: 20px;
+                margin-top: 6px;
+                margin-right: 4px;
+            }
+
+            .news-divider {
+                border: none;
+                border-top: 2px dashed #d0c8f0;
+                margin: 10px 0 40px;
+            }
+
+            .news-footer-cta {
+                background-color: #352479;
+                color: #fff;
+                text-align: center;
+                padding: 50px 40px;
+            }
+
+            .news-footer-cta a {
+                color: #ffbb83;
+                border-bottom: 2px solid #ffbb83;
+                text-decoration: none;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .news-hero h1 { font-size: 28px; }
+                .news-container { padding: 30px 20px; }
+                .news-item h2 { font-size: 18px; }
+            }
+        </style>
         
     </head>
 
@@ -38,40 +141,169 @@
 
     </header>
     
-    <div id="content">
+    <div id="content-news">
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
+        <div class="news-hero">
+            <h1>Novidades</h1>
+            <p>Tudo que rolou na gestão 2023/2024 da For The Future. Para acompanhar em tempo real →
+                <a href="https://www.instagram.com/gremio_jrc/" target="_blank">@gremio_jrc</a>
+            </p>
+        </div>
+
+        <div class="news-container">
+
+            <!-- LUTO -->
+            <div class="news-item" style="border-left-color: #333; background-color: #f5f5f5;">
+                <div class="news-date">2024 — Comunicado Oficial</div>
+                <h2 style="color: #111;">🖤 Nota de Luto — Yoha</h2>
+                <p>O Grêmio Estudantil do JRC se manifesta com profundo pesar pelo falecimento do aluno Yoha. Lamentamos imensamente essa perda irreparável e solidarizamos com os familiares e amigos neste momento de dor.</p>
+                <p>Uma carta aberta foi publicada em nosso Instagram em nome de toda a comunidade escolar.</p>
+                <span class="news-tag">Comunicado</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- DOAÇÕES RS -->
+            <div class="news-item" id="rs">
+                <div class="news-date">29 de novembro de 2024</div>
+                <h2>❤️ Doações para o Rio Grande do Sul</h2>
+                <p>O Grêmio mobilizou o Colégio Estadual Cívico-Militar João Ribeiro de Camargo para arrecadar doações às vítimas das enchentes que devastaram o RS. Roupas, alimentos e outros itens foram coletados e encaminhados.</p>
+                <p>Quando a escola é unida, ela consegue ir além dos muros. Obrigado a todos que contribuíram.</p>
+                <span class="news-tag">Solidariedade</span>
+                <span class="news-tag">Ação Social</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- COLOR WAR -->
+            <div class="news-item" id="colorwar">
+                <div class="news-date">Setembro de 2024</div>
+                <h2>🌈 Color War — A Olimpíada de Cores do JRC</h2>
+                <p>A For The Future apresentou a primeira olimpíada de cores do colégio: o Color War! Os alunos foram divididos em times coloridos e competiram em uma série de gincanas e provas ao longo do evento.</p>
+                <p>Uma das iniciativas mais animadas da gestão — a torcida foi em peso e a energia na quadra foi incrível.</p>
+                <span class="news-tag">Evento</span>
+                <span class="news-tag">Gincana</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- MÊS DO ORGULHO -->
+            <div class="news-item">
+                <div class="news-date">Junho de 2024</div>
+                <h2>🏳️‍🌈 Mês do Orgulho no JRC</h2>
+                <p>Em junho, o Grêmio celebrou o Mês do Orgulho dentro do colégio com uma publicação especial: o logo da For The Future nas cores do arco-íris, sinalizando que o JRC é um espaço de respeito e inclusão para todos.</p>
+                <p>Representar significa reconhecer todo mundo. Sem exceção.</p>
+                <span class="news-tag">Inclusão</span>
+                <span class="news-tag">Orgulho</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- INTERCLASSE DE VERÃO -->
+            <div class="news-item" id="interclasse">
+                <div class="news-date">23 de abril de 2024</div>
+                <h2>⚽ Interclasse de Verão 2024</h2>
+                <p>O Grêmio organizou o Interclasse de Verão 2024 — campeonato de futebol masculino entre turmas, com regulamento completo, times representando seleções e árbitros designados. Cada turma pôde inscrever até 10 jogadores, e a equipe vitoriosa recebeu troféu e premiação ao artilheiro.</p>
+                <p>Arte oficial do evento criada por <strong>@mr.jevvitto</strong>. Mais de 112 curtidas só no post de lançamento.</p>
+                <span class="news-tag">Esporte</span>
+                <span class="news-tag">Interclasse</span>
+                <span class="news-tag">Futebol</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- JRC GALLERY -->
+            <div class="news-item" id="gallery">
+                <div class="news-date">5 de março de 2024</div>
+                <h2>🎨 JRC Gallery 2024</h2>
+                <p>Lançamento do concurso de artes do JRC: a Gallery 2024! Aberto a todos os alunos com inscrição simbólica de R$1,00, o concurso foi dividido em duas categorias por faixa etária (6º ao 9º ano e 9º ano ao 3º ano do EM).</p>
+                <p>As obras mais votadas pelo Instagram avançavam para a final, onde foram julgadas por professores especializados com critérios de criatividade, técnica e originalidade. Qualquer apologia a movimentos de ódio ou plágio levava à desclassificação.</p>
+                <p>Arte da divulgação criada por <strong>@mr.jevvitto</strong>.</p>
+                <span class="news-tag">Arte</span>
+                <span class="news-tag">Concurso</span>
+                <span class="news-tag">Cultura</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- DIA DA MULHER -->
+            <div class="news-item">
+                <div class="news-date">8 de março de 2024</div>
+                <h2>💜 Dia Internacional da Mulher</h2>
+                <p>O Grêmio homenageou as mulheres do JRC com uma publicação especial e uma arte produzida por <strong>@mr.jevvitto</strong> — representando diferentes perfis de mulheres do colégio com força, estilo e identidade.</p>
+                <p>A secretaria também imprimiu os pôsteres e distribuiu na escola. Uma data que merece ser celebrada com presença, não só com postagem.</p>
+                <span class="news-tag">Data Comemorativa</span>
+                <span class="news-tag">Mulheres</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- PÉ DE MEIA -->
+            <div class="news-item">
+                <div class="news-date">Fevereiro de 2024</div>
+                <h2>💛 Pé de Meia chegou ao Paraná</h2>
+                <p>O Grêmio divulgou a chegada oficial do programa Pé de Meia ao Paraná — benefício do governo federal que oferece incentivo financeiro para estudantes do ensino médio de escolas públicas manterem frequência e desempenho.</p>
+                <p>Informação que chega a todo mundo faz diferença. Um dos representantes do JRC esteve presente no evento de lançamento estadual.</p>
+                <span class="news-tag">Informativo</span>
+                <span class="news-tag">Pé de Meia</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- MILITARIZAÇÃO -->
+            <div class="news-item" style="border-left-color: #b33a00; background-color: #fff8f5;">
+                <div class="news-date">Novembro de 2023</div>
+                <h2 style="color: #7a1f00;">✊ Posicionamento: Militarização NÃO é Educação</h2>
+                <p>A For The Future se posicionou publicamente contra a militarização de escolas, reforçando a mensagem: <em>"Nossa escola, nossa escolha."</em> O grêmio acredita que educação pública de qualidade não depende de hierarquias militares, mas de investimento, respeito e autonomia estudantil.</p>
+                <p>Sempre na luta. Por uma escola livre de pressões.</p>
+                <span class="news-tag">Posicionamento</span>
+                <span class="news-tag">Educação</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- VISITA PALÁCIO IGUAÇU -->
+            <div class="news-item">
+                <div class="news-date">Novembro de 2023</div>
+                <h2>🏛️ Rumo ao Palácio Iguaçu</h2>
+                <p>Membros do grêmio representaram os alunos do JRC em um evento estadual no Palácio Iguaçu, em Curitiba. A participação reforça o compromisso da For The Future de não ficar só dentro dos muros do colégio — representar é estar presente onde as decisões acontecem.</p>
+                <span class="news-tag">Representação</span>
+                <span class="news-tag">Evento Estadual</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- VOLLEYBALL -->
+            <div class="news-item">
+                <div class="news-date">Outubro / Novembro de 2023</div>
+                <h2>🏐 Volleyball JRC 2023</h2>
+                <p>Logo no início da gestão, o Grêmio organizou o torneio de vôlei do JRC — mais um passo para trazer competições esportivas de volta à rotina do colégio. O torneio reuniu turmas em disputas acirradas, com muita torcida e espírito de equipe.</p>
+                <span class="news-tag">Esporte</span>
+                <span class="news-tag">Vôlei</span>
+            </div>
+            <hr class="news-divider">
+
+            <!-- ELEIÇÃO -->
+            <div class="news-item" style="border-left-color: #ff7d13; background-color: #fff9f0;">
+                <div class="news-date">19 de outubro de 2023</div>
+                <h2>🗳️ A For The Future foi eleita!</h2>
+                <p>No dia 19 de outubro de 2023, a Chapa Nº1 — For The Future — venceu as eleições do Grêmio Estudantil do JRC para a gestão 2023/2024. Com o lema <em>"O amanhã é construído hoje"</em>, a chapa se apresentou como a primeira a buscar ativamente o movimento do grêmio, visando ajudar e representar a voz dos alunos.</p>
+                <p>Muito obrigado pelo apoio de todos. A partir daqui, começamos a construir.</p>
+                <span class="news-tag">Eleição</span>
+                <span class="news-tag">For The Future</span>
+                <span class="news-tag">Chapa 1</span>
+            </div>
+
+        </div>
+
+        <div class="news-footer-cta">
+            <h2>Mais atualizações pelo Instagram</h2>
+            <p>Posts, stories e bastidores em →
+                <a href="https://www.instagram.com/gremio_jrc/" target="_blank">@gremio_jrc</a>
+            </p>
+        </div>
 
     </div>
     
     <footer>
-
-        <a href="https://migatte-no-ultizin.webnode.page/" target="_blank">FINISAUTEMPOTENTIAE © | Ulti Corp. 2019 - 2023</a>
+        <a href="https://ultimatestrength.github.io/portfolio/" target="_blank">FINISAUTEMPOTENTIAE © | Ulti Corp. 2019 - 2023</a>
         <p>Desenvolvido por <a href="https://github.com/UltimateStrength" target="_blank">Marcos (Ulti)</a></p>
-    
     </footer>
 
     <script src="assets/scripts/inspectblockfilter.js"></script>
     <script src="assets/scripts/navMenu.js"></script>
+    <script src="assets/scripts/scrollreveal.js"></script>
+    <script src="assets/scripts/navScroll.js"></script>
 
 </body>
 </html>

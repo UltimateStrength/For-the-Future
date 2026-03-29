@@ -16,4 +16,8 @@ body {
     font-family: 'Lilita One', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
-  
+
+/* Smooth scroll global para âncoras */
+html {
+    scroll-behavior: smooth;
+}

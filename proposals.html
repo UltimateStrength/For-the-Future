@@ -11,6 +11,98 @@
 
         <link rel="icon" href="assets/images/shortlogo.png">
         <title>Propostas | For The Future</title>
+
+        <style>
+            #content-proposals {
+                overflow: hidden;
+                margin-top: 100px;
+            }
+
+            .proposals-hero {
+                background-color: #8c76e1;
+                color: #ffffff;
+                text-align: center;
+                padding: 60px 40px 40px;
+            }
+
+            .proposals-hero h1 {
+                font-size: 48px;
+                margin-bottom: 12px;
+            }
+
+            .proposals-hero p {
+                max-width: 700px;
+                margin: 0 auto;
+                color: #e5c9b2;
+                font-size: 20px;
+            }
+
+            .proposals-grid {
+                background-color: #ffffff;
+                padding: 60px 40px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 32px;
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+
+            .proposal-card {
+                background-color: #f4f0ff;
+                border-left: 6px solid #352479;
+                border-radius: 8px;
+                padding: 28px 24px;
+                flex: 1;
+                min-width: 280px;
+                max-width: 460px;
+            }
+
+            .proposal-card .icon {
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+
+            .proposal-card h2 {
+                color: #352479;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .proposal-card p {
+                color: #333;
+                font-size: 17px;
+                line-height: 1.5;
+                font-weight: normal;
+            }
+
+            .proposals-cta {
+                background-color: #352479;
+                color: #ffffff;
+                text-align: center;
+                padding: 50px 40px;
+            }
+
+            .proposals-cta h2 {
+                margin-bottom: 16px;
+            }
+
+            .proposals-cta a {
+                color: #ffbb83;
+                border-bottom: 2px solid #ffbb83;
+                text-decoration: none;
+            }
+
+            .proposals-cta a:hover {
+                color: #cd6a19;
+                border-bottom-color: #cd6a19;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .proposals-hero h1 { font-size: 28px; }
+                .proposals-grid { padding: 30px 20px; }
+            }
+        </style>
         
     </head>
 
@@ -37,41 +129,86 @@
         </div> 
 
     </header>
-    
-    <div id="content">
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta!</p>
+    <div id="content-proposals">
+
+        <div class="proposals-hero">
+            <h1>Nossas Propostas</h1>
+            <p>Chegamos com objetivos claros. Cada proposta abaixo nasceu de conversas reais com alunos do JRC — não de promessas vazias.</p>
+        </div>
+
+        <div style="background-color: #ffffff; padding-top: 50px;">
+            <div class="proposals-grid">
+
+                <div class="proposal-card">
+                    <div class="icon">🎉</div>
+                    <h2>Eventos e Cultura</h2>
+                    <p>Organizar eventos que movimentem o colégio de verdade: interclasse, gincanas, concursos de arte, semanas temáticas e celebrações de datas importantes. A escola tem muito talento — a For The Future existe para dar palco a isso.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">🗣️</div>
+                    <h2>Voz dos Alunos</h2>
+                    <p>Criar canais diretos e acessíveis para que qualquer aluno possa sugerir, reclamar ou propor algo ao grêmio. Representar significa ouvir. Nossas redes estão sempre abertas — e levamos as demandas a quem tem poder de mudança.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">⚽</div>
+                    <h2>Esporte e Integração</h2>
+                    <p>Promover campeonatos esportivos entre turmas com regras claras, fair play e reconhecimento dos campeões. Esporte une, e queremos que o JRC tenha mais disso — dentro e fora de quadra.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">🎨</div>
+                    <h2>Arte e Expressão</h2>
+                    <p>Abrir espaço para os artistas do colégio através de concursos, exposições e votações abertas à comunidade escolar. O JRC tem criatividade de sobra — e merece ser reconhecido por isso.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">🤝</div>
+                    <h2>Solidariedade</h2>
+                    <p>Mobilizar a escola para ações sociais quando necessário: arrecadação de doações, campanhas de conscientização e apoio a causas que afetam nossa comunidade. Grêmio presente não é só dentro do colégio.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">📢</div>
+                    <h2>Posicionamento e Representação</h2>
+                    <p>Tomar posição em pautas que afetam os estudantes — seja contra medidas que prejudiquem o ambiente escolar, seja na defesa da diversidade e do respeito a todos. O grêmio não existe para ficar em silêncio.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">📚</div>
+                    <h2>Apoio Acadêmico</h2>
+                    <p>Articular grupos de estudo entre alunos e divulgar recursos como o Pé de Meia e outros programas de apoio ao estudante do ensino médio. Informação que chega a todos faz diferença.</p>
+                </div>
+
+                <div class="proposal-card">
+                    <div class="icon">🌐</div>
+                    <h2>Comunicação Transparente</h2>
+                    <p>Manter os alunos informados sobre as atividades do grêmio, decisões tomadas e eventos por vir — pelo Instagram, pelo site e por qualquer canal que alcance mais gente.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="proposals-cta">
+            <h2>Tem uma ideia ou sugestão?</h2>
+            <p>A For The Future está sempre aberta. Fala com a gente diretamente pelo Instagram →
+                <a href="https://www.instagram.com/gremio_jrc/" target="_blank">@gremio_jrc</a>
+            </p>
+        </div>
 
     </div>
     
     <footer>
-
-        <a href="https://migatte-no-ultizin.webnode.page/" target="_blank">FINISAUTEMPOTENTIAE © | Ulti Corp. 2019 - 2023</a>
+        <a href="https://ultimatestrength.github.io/portfolio/" target="_blank">FINISAUTEMPOTENTIAE © | Ulti Corp. 2019 - 2023</a>
         <p>Desenvolvido por <a href="https://github.com/UltimateStrength" target="_blank">Marcos (Ulti)</a></p>
-    
     </footer>
 
     <script src="assets/scripts/inspectblockfilter.js"></script>
     <script src="assets/scripts/navMenu.js"></script>
+    <script src="assets/scripts/scrollreveal.js"></script>
+    <script src="assets/scripts/navScroll.js"></script>
 
 </body>
 </html>

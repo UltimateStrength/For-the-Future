@@ -1,40 +1,78 @@
+
+// Toggle de imagem
 function toggleImage(image) {
-    let currentImage = image.src.split('/').pop();
+    const filename = image.src.split('/').pop();
+    const match = filename.match(/^([pd])(\d+)\.jpg$/);
+    if (!match) return;
 
-    const imageMap = {
-        'p1.jpg': 'd1.jpg',
-        'p2.jpg': 'd2.jpg',
-        'p3.jpg': 'd3.jpg',
-        'p4.jpg': 'd4.jpg',
-        'p5.jpg': 'd5.jpg',
-        'p6.jpg': 'd6.jpg',
-        'p7.jpg': 'd7.jpg',
-        'p8.jpg': 'd8.jpg',
-        'p9.jpg': 'd9.jpg',
-        'p10.jpg': 'd10.jpg',
-        'p11.jpg': 'd11.jpg',
-        'p12.jpg': 'd12.jpg',
-        
-        'd1.jpg': 'p1.jpg',
-        'd2.jpg': 'p2.jpg',
-        'd3.jpg': 'p3.jpg',
-        'd4.jpg': 'p4.jpg',
-        'd5.jpg': 'p5.jpg',
-        'd6.jpg': 'p6.jpg',
-        'd7.jpg': 'p7.jpg',
-        'd8.jpg': 'p8.jpg',
-        'd9.jpg': 'p9.jpg',
-        'd10.jpg': 'p10.jpg',
-        'd11.jpg': 'p11.jpg',
-        'd12.jpg': 'p12.jpg',
-    };
+    const next = match[1] === 'p' ? 'd' : 'p';
+    image.classList.add('rotate-image');
 
-    if (currentImage in imageMap) {
-        image.classList.add('rotate-image');
-
-        setTimeout(() => {
-            image.src = "assets/images/" + imageMap[currentImage];
-            image.classList.remove('rotate-image');
-        }, 1000);
-    }
+    setTimeout(function () {
+        image.src = 'assets/images/' + next + match[2] + '.jpg';
+        image.classList.remove('rotate-image');
+    }, 1000);
 }
+
+
+//  Modal expandido 
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Cria o modal uma vez e injeta no body
+    var modal = document.createElement('div');
+    modal.id = 'person-modal';
+    modal.innerHTML = `
+        <div id="person-modal-overlay"></div>
+        <div id="person-modal-box">
+            <button id="person-modal-close" aria-label="Fechar">✕</button>
+            <img id="person-modal-img" src="" alt="">
+            <div id="person-modal-info">
+                <h2 id="person-modal-name"></h2>
+                <p id="person-modal-desc"></p>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    var overlay = document.getElementById('person-modal-overlay');
+    var closeBtn = document.getElementById('person-modal-close');
+    var modalImg = document.getElementById('person-modal-img');
+    var modalName = document.getElementById('person-modal-name');
+    var modalDesc = document.getElementById('person-modal-desc');
+
+    function openModal(imgSrc, name, desc) {
+        modalImg.src = imgSrc;
+        modalName.textContent = name;
+        modalDesc.textContent = desc;
+        modal.classList.add('modal-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('modal-open');
+        document.body.style.overflow = '';
+    }
+
+    overlay.addEventListener('click', closeModal);
+    closeBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // Adiciona listener de clique em cada .person
+    document.querySelectorAll('.person').forEach(function (person) {
+        person.style.cursor = 'pointer';
+
+        person.addEventListener('click', function (e) {
+            // Ignora clique direto na imagem (que já faz o toggle)
+            if (e.target.classList.contains('person-image')) return;
+
+            var img = person.querySelector('.person-image');
+            var name = person.querySelector('h2') ? person.querySelector('h2').textContent : '';
+            var desc = person.querySelector('p') ? person.querySelector('p').textContent : '';
+
+            openModal(img.src, name, desc);
+        });
+    });
+
+});
